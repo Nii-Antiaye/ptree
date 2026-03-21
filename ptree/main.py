@@ -129,7 +129,7 @@ def main() -> None:
     parser.add_argument("path", help="Starting directory path", nargs="?", default=".")
     parser.add_argument("--all", help="List all files, by default hidden files are not displayed", action="store_true")
     parser.add_argument("-d", "--directory", help="List directory only", action="store_true")
-    parser.add_argument("-l", "--level", help="Max depth to display (0 = no limit)", default=0, type=int)
+    parser.add_argument("-l", "--level", help="Max depth to display (0 = no limit)", default=1, type=int)
     parser.add_argument("--prune", help="Prune empty directories from the output", action="store_true")
     parser.add_argument("-s", "--size", help="Print file size in a human readable way", action="store_true")
 
